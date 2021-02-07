@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery food</title>
+    <title>Delivery food - Доставка еды на дом</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <navbar class="navbar">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <img src="img/icons/logo.svg" alt="Logo" class="navbar__logo" />
+          <input
+            type="text"
+            class="navbar__input search-input"
+            placeholder="Адрес доставки"
+          />
+          <div class="navbar__buttons">
+            <button class="navbar__button navbar__button-primary button">
+              <img src="img/icons/user.svg" alt="" class="navbar__button-icon">
+              <span class="navbar__button-text">Войти</span>
+            </button>
+            <button class="navbar__button button">
+              <img src="img/icons/cart.svg" alt="" class="navbar__button-icon">
+              Корзина
+            </button>
+          </div>
+          <!-- /.navbar__buttons -->
+        </div>
+        <!-- /.navbar-wrapper -->
+      </div>
+      <!-- /.container -->
+    </navbar>
+    <!-- /.navbar -->
+  </body>
 </html>
