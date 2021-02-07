@@ -24,6 +24,7 @@
   overflow: hidden
   margin-bottom: 30px
   flex-basis: 31%
+  text-decoration: none
   &__img
     height: 250px
     width: 384px
@@ -42,6 +43,8 @@
     font-size: 24px
     line-height: 32px
     color: #000000
+    &-reg
+      font-weight: 400
   &__tag
     font-weight: normal
     font-size: 12px
@@ -50,6 +53,16 @@
     color: #ffffff
     border-radius: 2px
     padding: 1px 8px
+  &-ingredients
+    color: $grey
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    margin-top: 10px
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+    max-width: 2000px
   &-footer
     display: flex
     align-items: center
@@ -77,3 +90,30 @@
     overflow: hidden
     white-space: nowrap
     max-width: 120px
+  &-buttons
+    @include flex ()
+    margin-top: 20px
+  &__button
+    display: flex
+    align-items: center
+    padding: 8px 16px
+    color: $btn
+    background: #FFFFFF
+    border: 1px solid #D9D9D9
+    box-sizing: border-box
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015)
+    border-radius: 2px
+    cursor: pointer
+    &-primary
+      background-color: $blue
+      border: none
+      color: #ffffff
+      margin-right: 10px
+    &-text
+      margin-right: 10px
+  &__price
+    &-bold
+      display: inline-block
+      font-weight: bold
+      font-size: 20px
+      line-height: 32px
