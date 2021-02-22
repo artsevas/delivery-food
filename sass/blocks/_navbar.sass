@@ -4,30 +4,79 @@
     padding-bottom: 40px
     @include flex ()
   &__input
-    flex: 0.7
+    width: 100%
     background-image: url(../img/icons/home.svg)
-  &__buttons
-    display: flex
-    align-items: center
-  &__button
-    display: flex
-    align-items: center
-    padding: 8px 16px
-    color: $btn
-    background: #FFFFFF
-    border: 1px solid #D9D9D9
-    box-sizing: border-box
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015)
-    border-radius: 2px
-    cursor: pointer
-    &-primary
-      background-color: $blue
-      border: none
-      color: #ffffff
-      margin-right: 10px
-    &-icon
-      margin-right: 6px
-      vertical-align: middle
-    &-text
-      color: #ffffff
-      vertical-align: middle
+.buttons
+  display: flex
+  align-items: center
+
+.adress
+  flex: 0.8
+.input
+  background-color: #ffffff
+  border: 1px solid #d9d9d9
+  border-radius: 2px
+  font-size: 16px
+  line-height: 24px
+  padding: 8px 8px 8px 35px
+  background-repeat: no-repeat
+  background-position: left 11px center
+.button
+  display: flex
+  align-items: center
+  padding: 8px 16px
+  background: #ffffff
+  border: 1px solid #d9d9d9
+  box-sizing: border-box
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015)
+  border-radius: 2px
+  color: #595959
+  font-size: 16px
+  line-height: 24px
+  &:hover
+    background: #1890ff
+    border: 1px solid #1890ff
+    color: #fff
+  &:hover .button-cart-svg
+    background-color: #fff
+  &-primary
+    background: #1890ff
+    border: 1px solid #1890ff
+    color: #fff
+    margin-right: 10px
+    &:hover
+      background: #ffffff
+      border: 1px solid #d9d9d9
+      color: #595959
+    &:hover .button-auth-svg
+      background-color: #595959
+  &-auth
+    background-position: 20px 13px
+    &-svg
+      width: 24px
+      height: 24px
+      background-color: #fff
+      -webkit-mask: url("../img/icons/user.svg") no-repeat 50% 50%
+      mask: url("../img/icons/user.svg") no-repeat 50% 50%
+      background-repeat: no-repeat
+  &-cart
+    display: none
+    margin: 0 5px
+    &-svg
+      width: 24px
+      height: 24px
+      background-color: #595959
+      -webkit-mask: url("../img/icons/cart.svg") no-repeat 50% 50%
+      mask: url("../img/icons/cart.svg") no-repeat 50% 50%
+      background-repeat: no-repeat
+  &-icon
+    margin-right: 6px
+  &-out
+    display: none
+    margin: 0 5px
+    
+.user-name
+  display: none
+  margin-right: 20px
+  font-weight: bold
+  font-size: 18px
